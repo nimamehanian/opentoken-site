@@ -1,0 +1,31 @@
+.header
+  display flex
+  justify-content center
+  align-items center
+  height 60px
+  padding 0px 8px
+  // box-shadow 0 7px 14px rgba(50,50,93,.1),
+  //   0 3px 6px rgba(0,0,0,.08)
+  background #fff
+  .header-content
+    display flex
+    justify-content space-between
+    align-items center
+    width 1200px
+    padding 0px 8px
+    .title
+      font-size 24px
+      font-family 'Filson Book'
+      letter-spacing 0.6px
+      color $titleBlue
+    .navlinks
+      .navlink
+        font-family 'Filson Book'
+        margin-left 16px
+        font-size 14px
+        color #47608d
+        transition color 0.15s
+        &:hover
+          color #a4b0c7
+        & .active
+          color #a4b0c7

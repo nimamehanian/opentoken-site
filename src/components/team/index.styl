@@ -1,0 +1,46 @@
+.team
+  display flex
+  justify-content space-between
+  align-items center
+  flex-direction column
+  .title
+    font-size 30px
+    margin 48px 0px 24px
+    text-align center
+  .avatars
+    display flex
+    justify-content center
+    align-items center
+    flex-wrap wrap
+    max-width 1200px
+    .teammate
+      margin 16px
+      .picture
+        margin-bottom 16px
+        cursor pointer
+        img
+          border-radius 50%
+          width 220px
+          height 220px
+      .name
+        display block
+        font-size 13px
+        line-height 1.4
+        font-family 'Filson Medium'
+        text-transform uppercase
+      .role
+        display block
+        font-size 14px
+        line-height 1.4
+        font-family 'Filson Light'
+      i
+        font-size 22px
+        margin-right 8px
+        color #a4b0c7
+        transition color 0.15s
+        &:hover
+          color $titleBlue
+  .investors
+    width 100vw
+    background #fff
+    padding 96px 0px

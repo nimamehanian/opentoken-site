@@ -1,0 +1,158 @@
+.sale-page
+  max-width 1200px
+  margin 0 auto
+  display flex
+  flex-direction column
+  .layer
+    display flex
+    justify-content space-between
+    flex-wrap wrap
+    align-items center
+    margin 16px 16px 0px
+    .left
+      display flex
+      flex-direction column
+      justify-content space-between
+      padding 0px 16px 16px
+      max-width 452px
+      .logo
+        {flexCenter}
+        img
+          height 120px
+      .name
+        font-family 'Filson Book'
+        font-size 32px
+      .description
+        font-size 14px
+        max-height 220px
+        overflow hidden
+    & .sale-status
+      width 100%
+      .funding-stats
+        display flex
+        justify-content space-between
+        align-items center
+        margin-top 16px
+        .amount-container
+          .amount
+            font-family 'Filson Medium'
+            font-size 16px
+            color $subtext
+          .currency
+            color $subtext
+            font-size 14px
+            margin 0px 2px
+          .raised
+            color $subtext
+            font-size 14px
+            margin 0px 2px
+        .percentage
+          color $subtext
+          font-family 'Filson Medium'
+          font-size 16px
+          position relative
+          top 2px
+      .progress-bar-container
+        height 14px
+        background rgba($subtext, 0.1)
+        width 100%
+        margin 2px 0px 2px
+        border-radius 2px
+        overflow hidden
+        .progress-bar-fill
+          background $spring
+          height 14px
+          border-top-left-radius 2px
+          border-bottom-left-radius 2px
+          // TODO move into component styles
+          width 31%
+      .under-progress-bar
+        display flex
+        align-items baseline
+        justify-content space-between
+      .time-remaining
+        font-family 'Filson Medium'
+        font-size 12px
+        margin 6px 0px 0px
+        display flex
+        align-items center
+        color rgba($subtext, 0.8)
+        i
+          font-size 22px
+          margin-right 4px
+        span
+          margin-right 3px
+          position relative
+      .links
+        color rgba($powderBlue, 0.6)
+        transition color 0.15
+        & i:hover
+          color rgba($powderBlue, 1)
+        .whitepaper, .website
+          font-size 26px
+          margin 0px 4px
+          cursor pointer
+        .website
+          position relative
+          top 1px
+    .right
+      display flex
+      flex-direction column
+      justify-content space-between
+      overflow hidden
+      .presentation
+        width 100%
+        max-width 484px
+        position relative
+        height 300px
+        iframe
+          height 300px
+          max-width 484px
+      .social-media-links
+        width 100%
+        display flex
+        justify-content flex-end
+        align-items center
+        margin-top 8px
+        i
+          font-size 28px
+          margin 0px 8px
+          color #47608d
+          transition color 0.15s
+          &:hover
+            color #a4b0c7
+      &.investment-terms
+        box-shadow 0 7px 14px rgba(50,50,93,.1),
+          0 3px 6px rgba(0,0,0,.08)
+        background #fff
+        border-radius 3px
+        padding 16px
+        width 100%
+        max-width 452px
+        .term
+          .label
+            font-size 13px
+            font-family 'Filson Medium'
+          .value
+            float right
+            font-size 13px
+  .section
+    margin 24px 16px 24px
+    .title
+      font-size 24px
+      border-bottom 1px solid rgba($dust, 0.5)
+      margin-bottom 8px
+    .content
+      font-size 16px
+      ul
+        margin-left 32px
+      .term
+        margin 4px 0px
+        .label
+          font-size 13px
+          font-family 'Filson Medium'
+          margin-right 8px
+        .value
+          font-size 13px
+          &:hover
+            text-decoration underline
